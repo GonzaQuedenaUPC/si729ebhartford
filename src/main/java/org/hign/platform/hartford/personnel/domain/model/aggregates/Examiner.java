@@ -1,12 +1,14 @@
 package org.hign.platform.hartford.personnel.domain.model.aggregates;
 
 import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import org.hign.platform.hartford.personnel.domain.model.commands.CreateExaminerCommand;
 import org.hign.platform.hartford.personnel.domain.model.valueobjects.NationalProviderIdentifier;
 import org.hign.platform.hartford.shared.domain.model.aggregates.AuditableAbstractAggregateRoot;
 
+@Entity
 public class Examiner extends AuditableAbstractAggregateRoot<Examiner> {
 
     @Getter
