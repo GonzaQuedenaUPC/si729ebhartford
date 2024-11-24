@@ -1,5 +1,7 @@
 package org.hign.platform.hartford.personnel.domain.model.valueobjects;
 
+import jakarta.persistence.Embeddable;
+
 import java.util.UUID;
 
 /**
@@ -7,6 +9,7 @@ import java.util.UUID;
  * This class represents the National Provider Identifier (NPI) of a provider.
  * @param nationalProviderIdentifier The NPI of the provider.
  */
+@Embeddable
 public record NationalProviderIdentifier(String nationalProviderIdentifier) {
     /***
      * @summary
