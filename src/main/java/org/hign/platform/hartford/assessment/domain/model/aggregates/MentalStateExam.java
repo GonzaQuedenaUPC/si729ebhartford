@@ -15,6 +15,7 @@ import java.util.Date;
 @Entity
 public class MentalStateExam extends AuditableAbstractAggregateRoot<MentalStateExam> {
 
+    @Getter
     @NotNull
     private Long patientId;
 
